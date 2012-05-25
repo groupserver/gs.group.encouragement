@@ -1,0 +1,6 @@
+<div id="gs-group-encouragement-area">
+  <tal:block replace="structure provider:groupserver.GroupEncouragement">
+    The Viewlet Manager
+  </tal:block>
+</div><!--gs-group-encouragement-area-->
+

@@ -4,6 +4,15 @@
   xmlns:rdb="http://namespaces.zope.org/rdb"
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
+
+  <browser:viewlet name="gs-group-encouragement-area"
+    manager="gs.group.home.interfaces.IGroupHomepageInfo"
+    template="browser/templates/encouragementarea.pt"
+    class="gs.group.home.admin.AdminTab"
+    permission="zope2.ManageProperties"
+    weight="10"
+    title="Encouragement" />
+
   <browser:viewletManager
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="groupserver.GroupEncouragement"
