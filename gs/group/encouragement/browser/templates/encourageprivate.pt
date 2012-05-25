@@ -1,0 +1,13 @@
+<div id="gs-group-encouragement-private">
+  <p>
+    <a href="admin_change_basic_privacy.html"><strong>Change</strong> 
+      the group privacy</a>
+    to <em>private,</em> to make
+    <span class="group" 
+      tal:content="view/groupInfo/name">this group</span> 
+    easier to use.
+    With a private group only group members can see the posts, but 
+    others will be able to <em>request membership.</em>
+  </p>
+</div><!--gs-group-encouragement-private-->
+
