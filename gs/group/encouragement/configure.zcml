@@ -6,7 +6,8 @@
   xmlns:five="http://namespaces.zope.org/five">
 
   <browser:viewlet name="gs-group-encouragement-area"
-    manager="gs.group.home.interfaces.IGroupHomepageInfo"
+    manager="gs.group.about.interfaces.IGroupAboutInfo"
+    for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/encouragementarea.pt"
     class="gs.group.home.admin.AdminTab"
     permission="zope2.ManageProperties"
@@ -20,5 +21,14 @@
     provides=".interfaces.IGroupEncouragement"
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/encouragementviewletmanager.pt"/>
+
+  <browser:viewlet name="gs-group-encouragement-start-topic"
+    manager=".interfaces.IGroupEncouragement"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    template="browser/templates/encouragetopics.pt"
+    class="gs.group.home.simpletab.UserInfoTab"
+    permission="zope2.ManageProperties"
+    weight="10"
+    title="Encourage Topics" />
 </configure>
 
