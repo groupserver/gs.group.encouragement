@@ -4,5 +4,12 @@
   xmlns:rdb="http://namespaces.zope.org/rdb"
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
+  <browser:viewletManager
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    name="groupserver.GroupEncouragement"
+    permission="zope2.View"
+    provides=".interfaces.IGroupEncouragement"
+    class="gs.viewlet.manager.WeightOrderedViewletManager"
+    template="browser/templates/encouragementviewletmanager.pt"/>
 </configure>
 
