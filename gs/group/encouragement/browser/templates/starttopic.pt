@@ -3,9 +3,12 @@
     <span class="group" 
       tal:content="view/groupInfo/name">this group</span>.
     To get it going 
-    <a href="messages/newTopic.html"><strong>start</strong> a topic!</a>
-    If you want to see what posting is like you can hide the post, then
-    no one will be able to see your test.
+    <a href="messages/newTopic.html"><strong>start</strong> a topic,</a>
+    or 
+    <a tal:attributes="href string:mailto:${view/email};"
+      href="#"><strong>send</strong> an email</a> to the group.
+    If you want to see what posting is like you can hide the post 
+    afterwards, then no one will be able to see your test.
   </p>
 </div><!--gs-group-encouragement-topics-->
 
