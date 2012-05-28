@@ -5,6 +5,7 @@
   xmlns:sqlos="http://namespaces.sqlobject.org/sqlos"
   xmlns:five="http://namespaces.zope.org/five">
 
+  <!--The viewlet that appears in the About tab on the Group page-->
   <browser:viewlet name="gs-group-encouragement-area"
     manager="gs.group.about.interfaces.IGroupAboutInfo"
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -14,6 +15,7 @@
     weight="10"
     title="Encouragement" />
 
+  <!--The viewlet manager that shows all the encouragement-->
   <browser:viewletManager
     for="gs.group.base.interfaces.IGSGroupMarker"
     name="groupserver.GroupEncouragement"
@@ -22,6 +24,7 @@
     class="gs.viewlet.manager.WeightOrderedViewletManager"
     template="browser/templates/encouragementviewletmanager.pt"/>
 
+  <!--The viewlets that encourage the administrator-->
   <browser:viewlet name="gs-group-encouragement-start-topic"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
