@@ -17,10 +17,9 @@ class Private(Invite):
         
     @property
     def show(self):
-        ppd = self.statsQuery.posts_per_day(self.groupInfo.id)
-        retval = ((ppd != []) 
-            and self.isSecret
-            and (self.memberCount > MAX_SECRET_MEMBERS))
+        retval = (self.isSecret
+            and (self.memberCount > MAX_SECRET_MEMBERS)
+            and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
         assert type(retval) == bool
         return retval
 

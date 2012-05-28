@@ -30,8 +30,8 @@ class StartTopic(UserInfoTab):
 
     @property
     def show(self):
-        ppd = self.statsQuery.posts_per_day(self.groupInfo.id)
-        retval = self.canPost.canPost and (ppd == [])
+        retval = (self.canPost.canPost 
+            and (self.statsQuery.posts_per_day(self.groupInfo.id) == []))
         assert type(retval) == bool
         return retval
 
