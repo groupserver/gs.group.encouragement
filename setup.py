@@ -7,7 +7,7 @@ version = get_version()
 
 setup(name='gs.group.encouragement',
     version=version,
-    description="The homepage for a GroupServer Group",
+    description="Some encouragement to the administrator of a GroupServer group",
     long_description=open("README.txt").read() + "\n" +
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     classifiers=[
@@ -32,6 +32,15 @@ setup(name='gs.group.encouragement',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.group.about',
+        'gs.group.base',
+        'gs.group.home',
+        'gs.group.member.canpost',
+        'gs.group.privacy',
+        'gs.viewlet',
+        'Products.GSGroup',
+        'Products.GSGroupMember',
+        'Products.GSParticipationStats',
         # -*- Extra requirements: -*-
     ],
     entry_points="""
