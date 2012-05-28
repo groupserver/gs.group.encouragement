@@ -36,8 +36,8 @@
   <browser:viewlet name="gs-group-encouragement-invite"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
-    template="browser/templates/encourageinvite.pt"
-    class="gs.group.home.simpletab.UserInfoTab"
+    template="browser/templates/invite.pt"
+    class=".invite.Invite"
     permission="zope2.ManageProperties"
     weight="20"
     title="Encourage Invitations" />
