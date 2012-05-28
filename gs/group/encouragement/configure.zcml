@@ -30,7 +30,7 @@
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/starttopic.pt"
     class=".starttopic.StartTopic"
-    permission="zope2.ManageProperties"
+    permission="zope2.ManageUsers"
     weight="10"
     title="Encourage Topics" />
   <browser:viewlet name="gs-group-encouragement-invite"
@@ -38,7 +38,7 @@
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/invite.pt"
     class=".invite.Invite"
-    permission="zope2.ManageProperties"
+    permission="zope2.ManageUsers"
     weight="20"
     title="Encourage Invitations" />
   <browser:viewlet name="gs-group-encouragement-private"
