@@ -44,8 +44,8 @@
   <browser:viewlet name="gs-group-encouragement-private"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
-    template="browser/templates/encourageprivate.pt"
-    class="gs.group.home.simpletab.UserInfoTab"
+    template="browser/templates/private.pt"
+    class=".private.Private"
     permission="zope2.ManageProperties"
     weight="30"
     title="Encourage Private" />
