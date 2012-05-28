@@ -8,7 +8,7 @@ class Invite(StartTopic):
     #   "StartTopic"
     @Lazy
     def membersInfo(self):
-        retval = GSGroupMembersInfo(self.group)
+        retval = GSGroupMembersInfo(self.context)
         assert retval
         return retval
 
@@ -22,7 +22,7 @@ class Invite(StartTopic):
         # Only show the Invite encouragement when the Topic 
         #   encouragement is not shown.
         ppd = self.statsQuery.posts_per_day(self.groupInfo.id)
-        retval = (ppd != []) and self.memberCount < 2
+        retval = (ppd != []) and (self.memberCount < 2)
         assert type(retval) == bool
         return retval
 
