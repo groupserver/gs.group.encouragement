@@ -28,8 +28,8 @@
   <browser:viewlet name="gs-group-encouragement-start-topic"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
-    template="browser/templates/encouragetopics.pt"
-    class="gs.group.home.simpletab.UserInfoTab"
+    template="browser/templates/starttopic.pt"
+    class=".starttopic.StartTopic"
     permission="zope2.ManageProperties"
     weight="10"
     title="Encourage Topics" />
