@@ -41,13 +41,21 @@
     permission="zope2.ManageUsers"
     weight="20"
     title="Encourage Invitations" />
+  <browser:viewlet name="gs-group-encouragement-about"
+    manager=".interfaces.IGroupEncouragement"
+    for="gs.group.base.interfaces.IGSGroupMarker"
+    template="browser/templates/about.pt"
+    class=".about.About"
+    permission="zope2.ManageProperties"
+    weight="30"
+    title="Encourage About" />
   <browser:viewlet name="gs-group-encouragement-private"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/private.pt"
     class=".private.Private"
     permission="zope2.ManageProperties"
-    weight="30"
+    weight="40"
     title="Encourage Private" />
 </configure>
 
