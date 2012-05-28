@@ -12,10 +12,11 @@ The Encouragement
 The encouragement is a viewlet, which appears at the top of the About 
 area (supplied by the ``gs.group.about.interfaces.IGroupAboutInfo`` 
 manager). Within the viewlet is a viewlet manager, that shows one of
-three items of encouragement:
+four items of encouragement:
 
 #.  `Start a topic`_,
-#.  `Invite a new member`_, or
+#.  `Invite a new member`_,
+#.  `Write an About`_,
 #.  `Make a group private`_ rather than secret.
 
 Unlike most viewlets the ``show`` property of each encouragement is
@@ -35,6 +36,13 @@ Once the group has a topic the *Invite a New Member* encouragement is
 shown. It encourages the administrator to invite someone else to join 
 the group. Once that person has accepted an invitation then the
 encouragement is hidden.
+
+Write an About
+--------------
+
+To normal members the *About* tab just shows some text that the 
+administrator. Once the group has really started this encouragement
+asks the administrator to write some metadata about the group.
 
 Make a Group Private
 ---------------------
