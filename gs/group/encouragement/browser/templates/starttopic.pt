@@ -1,12 +1,16 @@
-<div id="gs-group-encouragement-topics">
-  <p>It is great that you have started 
+<div id="gs-group-encouragement-topics"
+  class="info ui-widget-content ui-corner-all">
+  <p>
+    <span class="ui-icon ui-icon-info">&#160;</span>
+    It is great that you have started 
     <span class="group" 
       tal:content="view/groupInfo/name">this group</span>.
     To get it going 
     <a href="messages/newTopic.html"><strong>start</strong> a topic,</a>
     or 
     <a tal:attributes="href string:mailto:${view/email};"
-      href="#"><strong>send</strong> an email</a> to the group.
+      class="email" href="#"><strong>send</strong> an email</a> to the
+    group.
     If you want to see what posting is like you can hide the post 
     afterwards, then no one will be able to see your test.
   </p>

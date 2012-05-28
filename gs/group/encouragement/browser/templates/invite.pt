@@ -1,5 +1,7 @@
-<div id="gs-group-encouragement-invite">
+<div id="gs-group-encouragement-invite"
+  class="info ui-widget-content ui-corner-all">
   <p>
+    <span class="ui-icon ui-icon-info">&#160;</span>
     To get this group going you should
     <a href="admin_join.html"><strong>invite</strong> someone to join 
         this group.</a>
