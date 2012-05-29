@@ -2,15 +2,15 @@
   class="info ui-widget-content ui-corner-all">
   <p>
     <span class="ui-icon ui-icon-info">&#160;</span>
-    To make
+    <!--Goal-->
+    Make
     <span class="group" 
       tal:content="view/groupInfo/name">this group</span> 
-    easier to use
+    easier to use:
+    <!--Method-->
     <a href="admin_change_basic_privacy.html"><strong>change</strong> 
-      the group privacy</a>
-    to <em>private.</em>
+      the group privacy</a> to <em>private.</em>
     With a private group only group members can see the posts, but 
     others will be able to <em>request membership.</em>
   </p>
 </div><!--gs-group-encouragement-private-->
-

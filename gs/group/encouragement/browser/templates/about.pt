@@ -1,10 +1,18 @@
 <div id="gs-group-about-tab-admin"
   class="info ui-widget-content ui-corner-all">
   <p>
-    <span class="ui-icon ui-icon-info"></span>
-    As a site administrator you can
-    <a href="changeabout.html"><strong>change</strong> this About 
-      Tab.</a>
+    <span class="ui-icon ui-icon-info">&#160;</span>
+    <!--Prior step-->
+    Now others are using 
+    <span class="group"
+      tal:content="view/groupInfo/name">this group</span>
+    <!--Goal-->
+    you should write a description of this group.
+    <!--Method -->
+    <a href="changeabout.html"><strong>Change</strong>
+      this <cite>About</cite> tab,</a> to describe the purpose, rules,
+    and anything else that may be useful.
+    After that you will have a completely functioning group.
   </p>
 </div><!--gs-grou-about-tab-admin-->
 

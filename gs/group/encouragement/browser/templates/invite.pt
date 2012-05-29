@@ -2,7 +2,10 @@
   class="info ui-widget-content ui-corner-all">
   <p>
     <span class="ui-icon ui-icon-info">&#160;</span>
-    To get this group going you should
+    <!--Prior step-->
+    Now you have tested posting,
+    <!--Goal and method-->
+    you should
     <a href="admin_join.html"><strong>invite</strong> someone to join 
         this group.</a>
     Once the person accepts your invitation you can start to 
