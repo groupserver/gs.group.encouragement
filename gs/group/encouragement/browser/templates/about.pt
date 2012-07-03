@@ -1,7 +1,10 @@
 <div id="gs-group-about-tab-admin"
   class="info ui-widget-content ui-corner-all">
-  <p>
+  <p class="label">
     <span class="ui-icon ui-icon-info">&#160;</span>
+    Administration Advice
+  </p>
+  <p>
     <!--Prior step-->
     Now others are using 
     <span class="group"
