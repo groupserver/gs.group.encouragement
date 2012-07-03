@@ -32,6 +32,7 @@ setup(name='gs.group.encouragement',
     zip_safe=True,
     install_requires=[
         'setuptools',
+        'gs.database',
         'gs.group.about',
         'gs.group.base',
         'gs.group.home',

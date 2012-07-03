@@ -23,8 +23,7 @@ class StartTopic(UserInfoTab):
 
     @Lazy
     def statsQuery(self):
-        da = self.context.zsqlalchemy
-        retval = StatsQuery(self.context, da)
+        retval = StatsQuery(self.context)
         assert retval
         return retval
 
