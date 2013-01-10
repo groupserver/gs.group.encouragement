@@ -7,7 +7,7 @@ version = get_version()
 
 setup(name='gs.group.encouragement',
     version=version,
-    description="Some encouragement to the administrator of a GroupServer group",
+    description="Encouragement to the administrator of a GroupServer group",
     long_description=open("README.txt").read() + "\n" +
                       open(os.path.join("docs", "HISTORY.txt")).read(),
     classifiers=[
