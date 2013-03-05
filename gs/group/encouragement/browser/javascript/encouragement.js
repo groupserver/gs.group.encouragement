@@ -19,6 +19,7 @@ function GSGroupEncouragement () {
         t.popover('show');
     }
     
+
     function topics() {
         var e = null;
         var h = null;
@@ -30,6 +31,7 @@ function GSGroupEncouragement () {
         b = '#gs-group-type-announcement-posts-form-new-topic';
         create_popover(b, t, h, 'right');
     }
+
 
     function invite() {
         var e = null;
@@ -44,9 +46,23 @@ function GSGroupEncouragement () {
     }
 
 
+    function about() {
+        var e = null;
+        var h = null;
+        var t = null;
+        var b = null;
+        e = jQuery('#gs-group-about-tab-admin');
+        h = e.html();
+        t = e.attr('title');
+        b = '#gs-group-about-change-link';
+        create_popover(b, t, h, 'bottom');
+    }
+
+
     function exists(element) {
         return jQuery(element).length > 0;
     }
+
 
     function setup() {
         if (exists('#gs-group-encouragement-topics')) {
@@ -54,7 +70,9 @@ function GSGroupEncouragement () {
             window.setTimeout(topics, 2000);
         } else if (exists('#gs-group-encouragement-invite')) {
             invite();
-        }        
+        } else if (exists('#gs-group-about-tab-admin')) {
+            about();
+        }
     }
     return {
         init: setup,
