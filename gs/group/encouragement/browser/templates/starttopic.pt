@@ -1,22 +1,15 @@
-<div id="gs-group-encouragement-topics"
-  class="info ui-widget-content ui-corner-all">
-  <p class="label">
-    Administration Advice
-  </p>
+<div id="gs-group-encouragement-topics" title="Start a Topic">
   <p>
     <!--Prior step-->
-    You have started
-    <span class="group"
-      tal:content="view/groupInfo/name">this group</span>.
+    You have started a new group.
     <!--Goal-->
     To try it out,
     <!--Method-->
-    <a href="messages/newTopic.html"><strong>start</strong> a topic,</a>
+    <strong>start</strong> a topic,
     or
     <a tal:attributes="href string:mailto:${view/email};"
       class="email" href="#"><strong>send</strong> an email</a> to the
     group.
-    You can then see what the post looks like here, and in an email message.
     (You can hide the post afterwards, so no one will be able to see your test.)
   </p>
 </div><!--gs-group-encouragement-topics-->

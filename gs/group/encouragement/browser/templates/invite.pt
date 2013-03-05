@@ -1,18 +1,10 @@
-<div id="gs-group-encouragement-invite"
-  class="info ui-widget-content ui-corner-all">
-  <p class="label">
-    <span class="ui-icon ui-icon-info">&#160;</span>
-    Administration Advice
-  </p>
+<div id="gs-group-encouragement-invite" title="Invite Someone">
   <p>
     <!--Prior step-->
     Now you have tested posting,
     <!--Goal and method-->
-    you should
-    <a href="admin_join.html"><strong>invite</strong> someone to join 
-        this group.</a>
-    Once the person accepts your invitation you can start to 
-    collaborate.
+    you should <strong>invite</strong> someone to join this group.
+    Once the person accepts you can start to collaborate.
   </p>
 </div><!--gs-group-encouragement-invite-->
 
