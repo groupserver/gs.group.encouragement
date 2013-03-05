@@ -1,20 +1,13 @@
-<div id="gs-group-encouragement-private"
-  class="info ui-widget-content ui-corner-all">
-  <p class="label">
-    <span class="ui-icon ui-icon-info">&#160;</span>
-    Administration Advice
-  </p>
+<div id="gs-group-encouragement-private" title="Change the Privacy">
   <p>
-    <span class="ui-icon ui-icon-info">&#160;</span>
     <!--Goal-->
     Make
     <span class="group" 
       tal:content="view/groupInfo/name">this group</span> 
     easier to use:
     <!--Method-->
-    <a href="admin_change_basic_privacy.html"><strong>change</strong> 
-      the group privacy</a> to <em>private.</em>
-    With a private group only group members can see the posts, but 
-    others will be able to <em>request membership.</em>
+    <strong>change</strong> the group privacy to <em>private.</em>
+    With a private group only group members can see the posts, but others
+    will be able to <em>request membership.</em>
   </p>
 </div><!--gs-group-encouragement-private-->

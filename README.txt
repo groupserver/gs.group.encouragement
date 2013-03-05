@@ -61,17 +61,16 @@ asks the administrator to write some metadata about the group.
 Make a Group Private
 ---------------------
 
-The final encouragement is to make a group private, rather than secret.
-With the running of `OnlineGroups.Net`_ we have noticed that people 
-start *secret* groups as a matter of course (the default is *public*).
-However, once a group gets to around a dozen members the boundaries of
-the group becomes loose, and its existence stops being secret. In 
-addition, people have difficulty finding the group if they are not 
-logged in.
+The final encouragement is to make a group private, rather than secret.  At
+`OnlineGroups.Net`_ we have noticed that people start *secret* groups as a
+matter of course (the default is *public*).  However, once a group gets to
+around a dozen members the boundaries of the group becomes loose, and its
+existence stops being secret. In addition, people have difficulty finding
+the group if they are not logged in.
 
 To alleviate this problem encouragement is given to the *site*
 administrator to change the privacy of the group from secret to public
-when more than eleven people are members of the secret group group.
+when more than eleven people are members of the secret group.
 
 JavaScript
 ==========

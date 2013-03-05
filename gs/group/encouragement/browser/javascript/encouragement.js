@@ -59,6 +59,19 @@ function GSGroupEncouragement () {
     }
 
 
+    function set_private() {
+        var e = null;
+        var h = null;
+        var t = null;
+        var b = null;
+        e = jQuery('#gs-group-encouragement-private');
+        h = e.html();
+        t = e.attr('title');
+        b = '#gs-group-privacy-admin-link';
+        create_popover(b, t, h, 'left');
+    }
+
+
     function exists(element) {
         return jQuery(element).length > 0;
     }
@@ -66,13 +79,16 @@ function GSGroupEncouragement () {
 
     function setup() {
         if (exists('#gs-group-encouragement-topics')) {
-            // To give the chance for the No Topics to load
+            // To give the chance (2s) for No Topics to load
             window.setTimeout(topics, 2000);
         } else if (exists('#gs-group-encouragement-invite')) {
             invite();
         } else if (exists('#gs-group-about-tab-admin')) {
             about();
+        } else if (exists('#gs-group-encouragement-private')) {
+            set_private();
         }
+
     }
     return {
         init: setup,
