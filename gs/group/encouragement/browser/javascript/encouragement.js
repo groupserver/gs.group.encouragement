@@ -60,6 +60,9 @@ function GSGroupEncouragement () {
 
 
     function set_private() {
+        // If this encouragement annoys too many people it can be changed to
+        // an icon next to #gs-group-privacy-admin-link, which will create
+        // the popover when clicked.
         var e = null;
         var h = null;
         var t = null;
