@@ -1,18 +1,32 @@
+==========================
+``gs.group.encouragement``
+==========================
+A System to Encourage Group Administrators
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:Author: `Michael JasonSmith`_
+:Contact: Michael JasonSmith <mpj17@onlinegroups.net>
+:Date: 2013-03-04
+:Organization: `GroupServer.org`_
+:Copyright: This document is licensed under a
+  `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
+  by `OnlineGroups.Net`_.
+
 Introduction
 ============
 
 Setting up a group can be challenging, as it is hard to know what to do
-first. This product assists with this by providing some encouragement
-to the group administrator. `The encouragement`_ takes the form of some
-help-text for the administrator.
+first. This product assists with this by providing some encouragement to
+the group administrator. `The encouragement`_ takes the form of some
+help-text for the administrator, which is automatically displayed by some
+JavaScript_.
 
 The Encouragement
 =================
 
-The encouragement is a viewlet, which appears at the top of the About 
-area (supplied by the ``gs.group.about.interfaces.IGroupAboutInfo`` 
-manager). Within the viewlet is a viewlet manager, that shows one of
-four items of encouragement:
+The encouragement is a viewlet_, which appears in the JavaScript_ area of
+the Group page (see below for the reason why). Within the viewlet is a
+viewlet manager, that shows one of four items of encouragement:
 
 #.  `Start a topic`_,
 #.  `Invite a new member`_,
@@ -59,5 +73,34 @@ To alleviate this problem encouragement is given to the *site*
 administrator to change the privacy of the group from secret to public
 when more than eleven people are members of the secret group group.
 
-..  _OnlineGroups.Net: http://onlinegroups.net/
+JavaScript
+==========
 
+The encouragement is not shown by default (it is hidden by the
+CSS). Instead it provides the source-data for a Bootstrap_ Popover_ . The
+popover will be automatically shown, pointing at the related button or
+link, if the encouragement viewlet exists. The popover is almost standard:
+the only difference is that there is a close-button (which is necessary as
+the popovers are opened automatically).
+
+The JavaScript `browser resource`_ ``gs-group-encouragement-20130304.js``
+contains the code for controlling the encouragement. 
+
+
+Resources
+=========
+
+- Code repository: https://source.iopen.net/groupserver/gs.group.encouragement/
+- Questions and comments to http://groupserver.org/groups/development/
+- Report bugs at https://redmine.iopen.net/projects/groupserver/
+
+.. _onlinegroups.net: http://onlinegroups.net/
+.. _GroupServer.org: http://groupserver.org/
+.. _GroupServer: http://groupserver.org/
+.. _Michael JasonSmith: http://groupserver.org/p/mpj17
+.. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
+   http://creativecommons.org/licenses/by-sa/3.0/nz/
+.. _viewlet: http://docs.zope.org/zope.viewlet/
+.. _browser resource: http://docs.zope.org/zope.browserresource/
+.. _Bootstrap: http://twitter.github.com/bootstrap/
+.. _Popover: http://twitter.github.com/bootstrap/javascript.html#popovers
