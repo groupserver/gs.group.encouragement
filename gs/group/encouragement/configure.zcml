@@ -3,16 +3,20 @@
   xmlns:browser="http://namespaces.zope.org/browser"
   xmlns:five="http://namespaces.zope.org/five">
 
-  <!--The viewlet that appears in the About tab on the Group page-->
-  <browser:viewlet name="gs-group-encouragement-area"
-    manager="gs.group.about.interfaces.IGroupAboutInfo"
+  <browser:resource
+    name="gs-group-encouragement-20130304.js"
+    file="browser/javascript/encouragement.js" />
+
+  <!--The viewlet -->
+  <browser:viewlet 
+    name="gs-group-encouragement-area"
+    manager="gs.group.home.interfaces.IGroupHomepageScripts"
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/encouragementarea.pt"
     class="gs.group.home.admin.AdminTab"
     permission="zope2.ManageProperties"
-    weight="10"
+    weight="90"
     title="Encouragement" />
-
   <!--The viewlet manager that shows all the encouragement-->
   <browser:viewletManager
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -20,10 +24,11 @@
     permission="zope2.View"
     provides=".interfaces.IGroupEncouragement"
     class="gs.viewlet.manager.WeightOrderedViewletManager"
-    template="browser/templates/encouragementviewletmanager.pt"/>
+    template="browser/templates/simplemanager.pt"/>
 
   <!--The viewlets that encourage the administrator-->
-  <browser:viewlet name="gs-group-encouragement-start-topic"
+  <browser:viewlet 
+    name="gs-group-encouragement-start-topic"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/starttopic.pt"

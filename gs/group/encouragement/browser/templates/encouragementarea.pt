@@ -2,5 +2,7 @@
   <tal:block replace="structure provider:groupserver.GroupEncouragement">
     The Viewlet Manager
   </tal:block>
+  <script type="text/javascript" 
+          src="/++resource++gs-group-encouragement-20130304.js"
+          defer="true">&#160;</script>
 </div><!--gs-group-encouragement-area-->
-
