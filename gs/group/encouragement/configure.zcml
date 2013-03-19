@@ -13,7 +13,7 @@
     manager="gs.group.home.interfaces.IGroupHomepageScripts"
     for="gs.group.base.interfaces.IGSGroupMarker"
     template="browser/templates/encouragementarea.pt"
-    class="gs.group.home.admin.AdminTab"
+    class="gs.group.member.viewlet.GroupAdminViewlet"
     permission="zope2.ManageProperties"
     weight="90"
     title="Encouragement" />
