@@ -37,6 +37,7 @@ setup(name='gs.group.encouragement',
         'zope.component',
         'zope.viewlet',
         'gs.content.js.bootstrap',
+        'gs.group.base',
         'gs.group.home',
         'gs.group.member.canpost',
         'gs.group.privacy',
@@ -49,4 +50,3 @@ setup(name='gs.group.encouragement',
     entry_points="""
     # -*- Entry points: -*-
     """,)
-
