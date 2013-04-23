@@ -23,4 +23,3 @@ class Private(Invite):
             and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
         assert type(retval) == bool
         return retval
-

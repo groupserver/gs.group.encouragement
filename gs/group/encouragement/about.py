@@ -17,4 +17,3 @@ class About(Invite):
             and (self.memberCount > 1))
         assert type(retval) == bool
         return retval
-

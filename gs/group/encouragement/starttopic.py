@@ -5,10 +5,10 @@ from Products.GSGroup.interfaces import IGSMailingListInfo
 from Products.GSParticipationStats.queries import MessageQuery as \
     StatsQuery
 from gs.group.member.canpost.interfaces import IGSPostingUser
-from gs.group.home.simpletab import UserInfoTab
+from gs.group.member.viewlet import SiteAdminViewlet
 
 
-class StartTopic(UserInfoTab):
+class StartTopic(SiteAdminViewlet):
     def __init__(self, group, request, view, manager):
         super(StartTopic, self).__init__(group, request, view, manager)
 
@@ -32,7 +32,7 @@ class StartTopic(UserInfoTab):
 
     @property
     def show(self):
-        retval = (self.canPost.canPost
+        retval = (super(StartTopic, self).show and self.canPost.canPost
             and (self.statsQuery.posts_per_day(self.groupInfo.id) == []))
         assert type(retval) == bool
         return retval
