@@ -10,13 +10,14 @@ function GSGroupEncouragement () {
         var closeButton = null;
         // One day data-dismiss="popover" will work. Not today.
         onClick = 'jQuery(&quot;'+target+'&quot;).popover(&quot;hide&quot;);';
-        closeButton = '<button type="button" id="close" class="close" '+
+        closeButton = '<button type="button" class="close" '+
             'onclick="'+onClick+'">&times;</button>';
         d = {animation: true, title: title + closeButton, html: true, 
              placement: pos, trigger: 'manual', content: html}
         t = jQuery(target);
         t.popover(d);
         t.popover('show');
+        t.next('.popover').find('.popover-title').html(title + closeButton);
     }
     
 

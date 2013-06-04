@@ -4,7 +4,7 @@
   xmlns:five="http://namespaces.zope.org/five">
 
   <browser:resource
-    name="gs-group-encouragement-20130304.js"
+    name="gs-group-encouragement-20130604.js"
     file="browser/javascript/encouragement.js" />
 
   <!--The viewlet -->
