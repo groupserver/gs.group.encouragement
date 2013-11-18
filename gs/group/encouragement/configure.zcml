@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configure xmlns="http://namespaces.zope.org/zope"
   xmlns:browser="http://namespaces.zope.org/browser"
-  xmlns:five="http://namespaces.zope.org/five">
+           i18n_domain="groupserver">
+
+  <include package="zope.viewlet" file="meta.zcml" />
 
   <browser:resource
     name="gs-group-encouragement-20130604.js"
     file="browser/javascript/encouragement.js" />
 
   <!--The viewlet -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-encouragement-area"
     manager="gs.group.home.interfaces.IGroupHomepageScripts"
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -27,7 +29,7 @@
     template="browser/templates/simplemanager.pt"/>
 
   <!--The viewlets that encourage the administrator-->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-group-encouragement-start-topic"
     manager=".interfaces.IGroupEncouragement"
     for="gs.group.base.interfaces.IGSGroupMarker"
@@ -61,4 +63,3 @@
     weight="40"
     title="Encourage Private" />
 </configure>
-
