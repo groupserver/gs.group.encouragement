@@ -3,11 +3,7 @@ jQuery.noConflict();
 function GSGroupEncouragement () {
 
     function create_popover(target, title, html, pos) {
-        var d = null;
-        var b = null;
-        var onClick = null;
-        var t = null;
-        var closeButton = null;
+        var d=null, b=null, onClick=null, t=null, closeButton=null;
         // One day data-dismiss="popover" will work. Not today.
         onClick = 'jQuery(&quot;'+target+'&quot;).popover(&quot;hide&quot;);';
         closeButton = '<button type="button" class="close" '+
@@ -22,23 +18,24 @@ function GSGroupEncouragement () {
     
 
     function topics() {
-        var e = null;
-        var h = null;
-        var t = null;
-        var b = null;
+        var e=null, h=null, t=null, b=null, tab=null;
         e = jQuery('#gs-group-encouragement-topics');
         h = e.html();
         t = e.attr('title');
-        b = '#gs-group-type-announcement-posts-form-new-topic';
-        create_popover(b, t, h, 'right');
+        b = '#gs-group-messages-topics-search-form-new-topic';
+        // --=mpj17=-- overflow
+        // The New Topic button is in a tab. Tabs have overflow: auto set.
+        // This means that the popup is, well, duuurp de duuuurp durp. So
+        // here we find the tab, and get rid of the overflow setting.
+        tab = jQuery(b).parents('.tab-content');
+        tab.css('overflow', 'visible');
+
+        create_popover(b, t, h, 'bottom');
     }
 
 
     function invite() {
-        var e = null;
-        var h = null;
-        var t = null;
-        var b = null;
+        var e=null, h=null, t=null, b=null;
         e = jQuery('#gs-group-encouragement-invite');
         h = e.html();
         t = e.attr('title');
@@ -48,10 +45,7 @@ function GSGroupEncouragement () {
 
 
     function about() {
-        var e = null;
-        var h = null;
-        var t = null;
-        var b = null;
+        var e=null, h=null, t=null, b=null;
         e = jQuery('#gs-group-about-tab-admin');
         h = e.html();
         t = e.attr('title');
@@ -64,10 +58,7 @@ function GSGroupEncouragement () {
         // If this encouragement annoys too many people it can be changed to
         // an icon next to #gs-group-privacy-admin-link, which will create
         // the popover when clicked.
-        var e = null;
-        var h = null;
-        var t = null;
-        var b = null;
+        var e=null, h=null, t=null, b=null;
         e = jQuery('#gs-group-encouragement-private');
         h = e.html();
         t = e.attr('title');
