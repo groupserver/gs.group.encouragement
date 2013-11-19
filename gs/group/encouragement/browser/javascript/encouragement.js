@@ -1,21 +1,25 @@
+// GroupServer skin for WYMeditor by Michael JasonSmith
+//
+//
+// This software is subject to the provisions of the Zope Public License,
+// Version 2.1 (ZPL). http://groupserver.org/downloads/license/
 jQuery.noConflict();
-
 function GSGroupEncouragement () {
 
     function create_popover(target, title, html, pos) {
-        var d=null, b=null, onClick=null, t=null, closeButton=null;
+        var d=null, onClick=null, t=null, closeButton=null;
         // One day data-dismiss="popover" will work. Not today.
         onClick = 'jQuery(&quot;'+target+'&quot;).popover(&quot;hide&quot;);';
         closeButton = '<button type="button" class="close" '+
             'onclick="'+onClick+'">&times;</button>';
-        d = {animation: true, title: title + closeButton, html: true, 
+        d = {animation: true, title: title + closeButton, html: true,
              placement: pos, trigger: 'manual', content: html}
         t = jQuery(target);
         t.popover(d);
         t.popover('show');
         t.next('.popover').find('.popover-title').html(title + closeButton);
     }
-    
+
 
     function topics() {
         var e=null, h=null, t=null, b=null, tab=null;
@@ -90,5 +94,7 @@ function GSGroupEncouragement () {
     };
 }
 jQuery(window).load(function() {
-    var e = GSGroupEncouragement(); e.init()
+    var e = null;
+    e = GSGroupEncouragement();
+    e.init()
 });

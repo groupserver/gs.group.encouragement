@@ -1,12 +1,13 @@
 ==========================
 ``gs.group.encouragement``
 ==========================
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 A System to Encourage Group Administrators
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-03-04
+:Date: 2013-11-18
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -47,14 +48,14 @@ Invite a New Member
 -------------------
 
 Once the group has a topic the *Invite a New Member* encouragement is
-shown. It encourages the administrator to invite someone else to join 
+shown. It encourages the administrator to invite someone else to join
 the group. Once that person has accepted an invitation then the
 encouragement is hidden.
 
 Write an About
 --------------
 
-To normal members the *About* tab just shows some text that the 
+To normal members the *About* tab just shows some text that the
 administrator. Once the group has really started this encouragement
 asks the administrator to write some metadata about the group.
 
@@ -82,9 +83,8 @@ link, if the encouragement viewlet exists. The popover is almost standard:
 the only difference is that there is a close-button (which is necessary as
 the popovers are opened automatically).
 
-The JavaScript `browser resource`_ ``gs-group-encouragement-20130304.js``
-contains the code for controlling the encouragement. 
-
+The JavaScript `browser resource`_ ``gs-group-encouragement-20131118.js``
+contains the code for controlling the encouragement.
 
 Resources
 =========

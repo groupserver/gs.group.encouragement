@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configure xmlns="http://namespaces.zope.org/zope"
-  xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:browser="http://namespaces.zope.org/browser"
            i18n_domain="groupserver">
 
   <include package="zope.viewlet" file="meta.zcml" />
 
   <browser:resource
-    name="gs-group-encouragement-20130604.js"
+    name="gs-group-encouragement-20131118.js"
+    file="browser/javascript/encouragement.js" />
+  <browser:resource
+    name="gs-group-encouragement-20131118-min.js"
     file="browser/javascript/encouragement.js" />
 
   <!--The viewlet -->
