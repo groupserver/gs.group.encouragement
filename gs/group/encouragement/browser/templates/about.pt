@@ -1,7 +1,7 @@
 <div id="gs-group-about-tab-admin" title="Write a Description">
   <p>
     <!--Prior step-->
-    Now others are using 
+    Now others are using
     <span class="group"
       tal:content="view/groupInfo/name">this group</span>
     <!--Goal-->

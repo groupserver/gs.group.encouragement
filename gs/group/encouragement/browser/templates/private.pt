@@ -2,8 +2,8 @@
   <p>
     <!--Goal-->
     Make
-    <span class="group" 
-      tal:content="view/groupInfo/name">this group</span> 
+    <span class="group"
+      tal:content="view/groupInfo/name">this group</span>
     easier to use:
     <!--Method-->
     <strong>change</strong> the group privacy to <em>private.</em>
