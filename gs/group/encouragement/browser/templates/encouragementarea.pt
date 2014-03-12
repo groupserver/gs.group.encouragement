@@ -4,5 +4,5 @@
   </tal:block>
   <script type="text/javascript"
           src="/++resource++gs-group-encouragement-20131118-min.js"
-          defer="true">&#160;</script>
+          defer="defer"> </script>
 </div><!--gs-group-encouragement-area-->
