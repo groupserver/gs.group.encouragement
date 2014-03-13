@@ -6,11 +6,11 @@
   <include package="zope.viewlet" file="meta.zcml" />
 
   <browser:resource
-    name="gs-group-encouragement-20131118.js"
+    name="gs-group-encouragement-20140313.js"
     file="browser/javascript/encouragement.js" />
   <browser:resource
-    name="gs-group-encouragement-20131118-min.js"
-    file="browser/javascript/encouragement.js" />
+    name="gs-group-encouragement-20140313-min.js"
+    file="browser/javascript/encouragement-min.js" />
 
   <!--The viewlet -->
   <browser:viewlet
