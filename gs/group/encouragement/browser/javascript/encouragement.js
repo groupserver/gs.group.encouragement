@@ -15,6 +15,8 @@ jQuery.noConflict();
 
 
 function GSGroupEncouragement () {
+    // To give the chance (3s) for things to load
+    var TIMEOUT_TIME = 3000;
 
     function create_popover(target, title, html, pos) {
         var d=null, onClick=null, t=null, closeButton=null;
@@ -83,16 +85,14 @@ function GSGroupEncouragement () {
 
     function setup() {
         if (exists('#gs-group-encouragement-topics')) {
-            // To give the chance (2s) for No Topics to load
-            window.setTimeout(topics, 2000);
+            window.setTimeout(topics, TIMEOUT_TIME);
         } else if (exists('#gs-group-encouragement-invite')) {
-            invite();
+            window.setTimeout(invite, TIMEOUT_TIME);
         } else if (exists('#gs-group-about-tab-admin')) {
-            about();
+            window.setTimeout(about, TIMEOUT_TIME);
         } else if (exists('#gs-group-encouragement-private')) {
-            set_private();
+            window.setTimeout(set_private, TIMEOUT_TIME);
         }
-
     }
     return {
         init: setup
