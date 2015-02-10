@@ -1,9 +1,11 @@
 Changelog
 =========
 
-2.3.1 (2015-02-05)
+2.4.0 (2015-02-10)
 ------------------
 
+* Added internationalisation support
+* Naming the reStructuredText files as such
 * Pointing everything at GitHub_
 
 .. _GitHub: https://github.com/groupserver/gs.group.encouragement
@@ -69,3 +71,5 @@ Changelog
 Initial version of `this product`_.
 
 .. _this product: https://github.com/groupserver/gs.group.encouragement
+
+..  LocalWords:  Changelog reStructuredText GitHub

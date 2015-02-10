@@ -1,8 +1,11 @@
-<div id="gs-group-about-tab-admin" title="Write a Description">
-  <p>
+<div xmlns:tal="http://xml.zope.org/namespaces/tal"
+     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+     i18n:domain="gs.group.encouragement"
+     id="gs-group-about-tab-admin" title="Write a Description">
+  <p i18n:translate="write-description">
     <!--Prior step-->
     Now others are using
-    <span class="group"
+    <span class="group" i18n:name="groupName"
       tal:content="view/groupInfo/name">this group</span>
     <!--Goal-->
     you should write a description of this group.
