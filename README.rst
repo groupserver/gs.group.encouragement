@@ -100,6 +100,7 @@ Resources
 =========
 
 - Code repository: https://github.com/groupserver/gs.group.encouragement/
+- Translations: https://www.transifex.com/projects/p/gs-group-encouragement/
 - Questions and comments to http://groupserver.org/groups/development/
 - Report bugs at https://redmine.iopen.net/projects/groupserver/
 
