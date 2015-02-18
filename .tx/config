@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[gs-group-encouragement.gs-group-encouragement-pot]
+file_filter = gs/group/encouragement/locales/<lang>/LC_MESSAGES/gs.group.encouragement.po
+source_file = gs/group/encouragement/locales/gs.group.encouragement.pot
+source_lang = en
+type = PO
+
