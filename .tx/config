@@ -3,7 +3,6 @@ host = https://www.transifex.com
 
 [gs-group-encouragement.gs-group-encouragement-pot]
 file_filter = gs/group/encouragement/locales/<lang>/LC_MESSAGES/gs.group.encouragement.po
-source_file = gs/group/encouragement/locales/en/LC_MESSAGES/gs.group.encouragement.po
 source_lang = en
 type = PO
 

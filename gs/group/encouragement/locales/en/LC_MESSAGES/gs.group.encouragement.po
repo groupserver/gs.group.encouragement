@@ -17,20 +17,19 @@ msgstr ""
 #. Default: "<!--Prior step--> Now you have tested posting, <!--Goal and method--> you should <strong>invite</strong> someone to join this group. Once the person accepts you can start to collaborate."
 #: ./browser/templates/invite.pt:5
 msgid "invite"
-msgstr ""
+msgstr "Now you have tested posting, you should <strong>invite</strong> someone to join this group. Once the person accepts you can start to collaborate."
 
 #. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method--> <strong>change</strong> the group privacy to <em>private.</em> With a private group only group members can see the posts, but others will be able to <em>request membership.</em>"
 #: ./browser/templates/private.pt:8
 msgid "privacy"
-msgstr ""
+msgstr "Make ${groupName} easier to use: <strong>change</strong> the group privacy to <em>private.</em> With a private group only group members can see the posts, but others will be able to <em>request membership.</em>"
 
 #. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <strong>start</strong> a topic, or <a class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>send</strong> an email</a> to the group. (You can hide the post afterwards, so no one will be able to see your test.)"
 #: ./browser/templates/starttopic.pt:13
 msgid "start-topic"
-msgstr ""
+msgstr "You have started a new group. To try it out, <strong>start</strong> a topic, or <a class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>send</strong> an email</a> to the group. (You can hide the post afterwards, so no one will be able to see your test.)"
 
 #. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal--> you should write a description of this group. <!--Method --> <strong>Change</strong> the <em>About,</em> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
 #: ./browser/templates/about.pt:8
 msgid "write-description"
-msgstr ""
-
+msgstr "Now others are using ${groupName} you should write a description of this group. <strong>Change</strong> the <em>About,</em> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
