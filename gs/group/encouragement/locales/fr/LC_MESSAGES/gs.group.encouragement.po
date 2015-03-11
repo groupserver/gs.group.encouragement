@@ -1,10 +1,11 @@
 # 
 # Translators:
+# Razique Mahroua <razique.mahroua@gmail.com>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.encouragement\n"
 "POT-Creation-Date: 2015-02-10 17:55+0000\n"
-"PO-Revision-Date: 2015-02-20 16:54+0000\n"
+"PO-Revision-Date: 2015-03-11 19:44+0000\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/gs-group-encouragement/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +23,7 @@ msgstr ""
 #. Once the person accepts you can start to collaborate."
 #: ./browser/templates/invite.pt:5
 msgid "invite"
-msgstr ""
+msgstr "Maintenant que vous avez pu tester l'envoi d'un message, nous vous encourageons à <strong>inviter</strong> une personne à joindre ce groupe. Une fois que la personne a accepté votre invitation, elle pourra commencer à participer."
 
 #. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method-->
 #. <strong>change</strong> the group privacy to <em>private.</em> With a
@@ -30,7 +31,7 @@ msgstr ""
 #. to <em>request membership.</em>"
 #: ./browser/templates/private.pt:8
 msgid "privacy"
-msgstr ""
+msgstr "Rendez ${groupName} plus facile à utiliser: <strong>passez</strong> ce groupe en <em>privé</em>. Lorsqu'un groupe est privé, seuls ses membres peuvent consulter les sujets, mais les autres utilisateurs auront la possibiltié de <em>demander à joindre</em> le groupe."
 
 #. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To
 #. try it out, <!--Method--> <strong>start</strong> a topic, or <a
@@ -39,7 +40,7 @@ msgstr ""
 #. be able to see your test.)"
 #: ./browser/templates/starttopic.pt:13
 msgid "start-topic"
-msgstr ""
+msgstr "Vous avez créé un nouveau groupe. Utilisez-le ! <strong>démarrez</strong> un nouveau sujet, ou bien <a class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>envoyez</strong> un e-mail</a> au membres du groupe (il vous sera possible de dissimuler le sujet après-coup, afin que personne ne puisse consulter votre sujet test)."
 
 #. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal-->
 #. you should write a description of this group. <!--Method -->
@@ -48,4 +49,4 @@ msgstr ""
 #. functioning group."
 #: ./browser/templates/about.pt:8
 msgid "write-description"
-msgstr ""
+msgstr "Maintenant, d'autres utilisateurs utilisent le groupe ${groupName}, nous vous invitons à fournir une description au groupe. <strong>Mettez à jour</strong> la section <em>A propos</em>, afin de détailler le but du groupe, les règles d'utilisateur, ou bien tout autre information que vous jugez nécessaire. Une fois cela effectué, votre groupe sera prêt !"
