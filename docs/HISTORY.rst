@@ -1,6 +1,15 @@
 Changelog
 =========
 
+2.4.1 (2015-03-11)
+------------------
+
+* [FR] Adding a French translation, thanks to `Razique Mahroua`_
+* [ES] Adding the PO files
+
+.. _Razique Mahroua:
+   https://www.transifex.com/accounts/profile/Razique/
+
 2.4.0 (2015-02-10)
 ------------------
 
