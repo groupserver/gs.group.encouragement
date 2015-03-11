@@ -1,0 +1,51 @@
+# 
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: gs.group.encouragement\n"
+"POT-Creation-Date: 2015-02-10 17:55+0000\n"
+"PO-Revision-Date: 2015-02-18 19:49+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/gs-group-encouragement/language/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Domain: DOMAIN\n"
+"Language: es\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Preferred-Encodings: utf-8 latin1\n"
+
+#. Default: "<!--Prior step--> Now you have tested posting, <!--Goal and
+#. method--> you should <strong>invite</strong> someone to join this group.
+#. Once the person accepts you can start to collaborate."
+#: ./browser/templates/invite.pt:5
+msgid "invite"
+msgstr ""
+
+#. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method-->
+#. <strong>change</strong> the group privacy to <em>private.</em> With a
+#. private group only group members can see the posts, but others will be able
+#. to <em>request membership.</em>"
+#: ./browser/templates/private.pt:8
+msgid "privacy"
+msgstr ""
+
+#. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To
+#. try it out, <!--Method--> <strong>start</strong> a topic, or <a
+#. class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>send</strong> an
+#. email</a> to the group. (You can hide the post afterwards, so no one will
+#. be able to see your test.)"
+#: ./browser/templates/starttopic.pt:13
+msgid "start-topic"
+msgstr ""
+
+#. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal-->
+#. you should write a description of this group. <!--Method -->
+#. <strong>Change</strong> the <em>About,</em> to describe the purpose, rules,
+#. and anything else that may be useful. After that you will have a completely
+#. functioning group."
+#: ./browser/templates/about.pt:8
+msgid "write-description"
+msgstr ""
