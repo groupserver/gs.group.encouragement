@@ -8,11 +8,13 @@
     <!--Goal-->
     To try it out,
     <!--Method-->
-    <strong>start</strong> a topic,
-    or
-    <a tal:attributes="href string:mailto:${view/email};"
-      class="email" href="#"><strong>send</strong> an email</a> to the
-    group.
+    <b>start</b> a topic, or <b>send</b> an email to the group
+    at
+   <a i18n:name="groupEmail"
+      style="display:inline-block;max-width:12em;overflow:hidden;text-overflow:ellipsis;"
+       tal:attributes="href string:mailto:${view/email};"
+       class="email"
+       href="#"><code tal:content="view/email">addr</code>.</a>
     (You can hide the post afterwards, so no one will be able to
     see your test.)
   </p>
