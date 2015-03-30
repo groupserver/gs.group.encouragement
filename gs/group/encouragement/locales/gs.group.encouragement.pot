@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-02-10 17:55+0000\n"
+"POT-Creation-Date: 2015-03-30 22:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "privacy"
 msgstr ""
 
-#. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <strong>start</strong> a topic, or <a class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>send</strong> an email</a> to the group. (You can hide the post afterwards, so no one will be able to see your test.)"
+#. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to the group at ${groupEmail} (You can hide the post afterwards, so no one will be able to see your test.)"
 #: ./browser/templates/starttopic.pt:13
 msgid "start-topic"
 msgstr ""

@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.encouragement\n"
-"POT-Creation-Date: 2015-02-10 17:55+0000\n"
-"PO-Revision-Date: 2015-02-20 16:54+0000\n"
+"POT-Creation-Date: 2015-03-30 22:15+0000\n"
+"PO-Revision-Date: 2015-03-30 22:37+0000\n"
 "Last-Translator: Michael JasonSmith <mpj17@onlinegroups.net>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/gs-group-encouragement/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -33,10 +33,9 @@ msgid "privacy"
 msgstr ""
 
 #. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To
-#. try it out, <!--Method--> <strong>start</strong> a topic, or <a
-#. class=\"email\" href=\"${DYNAMIC_CONTENT}\"><strong>send</strong> an
-#. email</a> to the group. (You can hide the post afterwards, so no one will
-#. be able to see your test.)"
+#. try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to
+#. ${groupEmail} (You can hide the post afterwards, so no one will be able to
+#. see your test.)"
 #: ./browser/templates/starttopic.pt:13
 msgid "start-topic"
 msgstr ""
