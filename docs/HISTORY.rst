@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.4.2 (2015-03-30)
+------------------
+
+* Showing the group email-address in the *Start a topic*
+  encouragement
+
 2.4.1 (2015-03-11)
 ------------------
 
