@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2012, 2013, 2014, 2015 OnlineGroups.net and Contributors.
+# Copyright © 2012, 2013, 2014, 2015, 2016 OnlineGroups.net and
+# Contributors.
 #
 # All Rights Reserved.
 #
@@ -15,8 +16,7 @@
 ############################################################################
 from __future__ import absolute_import, unicode_literals
 from zope.cachedescriptors.property import Lazy
-from zope.component import getMultiAdapter
-from Products.GSGroup.interfaces import IGSMailingListInfo
+from zope.component import (getMultiAdapter, createObject, )
 from gs.group.stats import MessageQuery as StatsQuery
 from gs.group.member.canpost.interfaces import IGSPostingUser
 from gs.group.member.viewlet import SiteAdminViewlet
@@ -28,7 +28,7 @@ class StartTopic(SiteAdminViewlet):
 
     @Lazy
     def email(self):
-        l = IGSMailingListInfo(self.groupInfo.groupObj)
+        l = createObject('groupserver.MailingListInfo', self.context)
         retval = l.get_property('mailto')
         return retval
 
