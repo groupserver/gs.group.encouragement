@@ -15,7 +15,7 @@
 ############################################################################
 from __future__ import absolute_import, unicode_literals
 from zope.cachedescriptors.property import Lazy
-from Products.GSGroupMember.groupMembersInfo import GSGroupMembersInfo
+from gs.group.member.base import AllMembers
 from .starttopic import StartTopic
 
 
@@ -23,9 +23,8 @@ class Invite(StartTopic):
     # See the "show" property for why "Invite" inherits from
     #   "StartTopic"
     @Lazy
-    def membersInfo(self):
-        retval = GSGroupMembersInfo(self.context)
-        assert retval
+    def members(self):
+        retval = AllMembers(self.context)
         return retval
 
     @Lazy
@@ -38,7 +37,7 @@ class Invite(StartTopic):
         # Only show the Invite encouragement when the Topic
         #   encouragement is not shown.
         retval = (
-            (self.memberCount < 2)
+            (len(self.members) < 2)
             and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
         assert type(retval) == bool
         return retval
