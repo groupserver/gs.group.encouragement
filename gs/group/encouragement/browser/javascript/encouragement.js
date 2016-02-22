@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 // Popup encouragement for a group administrator
 //
-// Copyright © 2013, 2014 OnlineGroups.net and Contributors.
+// Copyright © 2013, 2014, 2016 OnlineGroups.net and Contributors.
 // All Rights Reserved.
 //
 // This software is subject to the provisions of the Zope Public License,
@@ -14,17 +14,19 @@
 jQuery.noConflict();
 
 
-function GSGroupEncouragement () {
+function GSGroupEncouragement() {
     // To give the chance (3s) for things to load
     var TIMEOUT_TIME = 3000;
 
     function create_popover(target, title, html, pos) {
-        var d=null, onClick=null, t=null, closeButton=null;
+        var d = null, onClick = null, t = null, closeButton = null;
         // One day data-dismiss="popover" will work. Not today.
-        onClick = 'jQuery(&quot;' + target + '&quot;).popover(&quot;hide&quot;);';
-        closeButton = '<button type="button" class="close" ' + 'onclick="' + onClick + '">&times;</button>';
+        onClick = 'jQuery(&quot;' + target +
+            '&quot;).popover(&quot;hide&quot;);';
+        closeButton = '<button type="button" class="close" ' + 'onclick="' +
+            onClick + '">&times;</button>';
         d = {animation: true, title: title + closeButton, html: true,
-             placement: pos, trigger: 'manual', content: html}
+             placement: pos, trigger: 'manual', content: html};
         t = jQuery(target);
         t.popover(d);
         t.popover('show');
@@ -32,7 +34,7 @@ function GSGroupEncouragement () {
     }
 
     function topics() {
-        var e=null, h=null, t=null, b=null, tab=null;
+        var e = null, h = null, t = null, b = null, tab = null;
         e = jQuery('#gs-group-encouragement-topics');
         h = e.html();
         t = e.attr('title');
@@ -48,7 +50,7 @@ function GSGroupEncouragement () {
     }
 
     function invite() {
-        var e=null, h=null, t=null, b=null;
+        var e = null, h = null, t = null, b = null;
         e = jQuery('#gs-group-encouragement-invite');
         h = e.html();
         t = e.attr('title');
@@ -57,7 +59,7 @@ function GSGroupEncouragement () {
     }
 
     function about() {
-        var e=null, h=null, t=null, b=null;
+        var e = null, h = null, t = null, b = null;
         e = jQuery('#gs-group-about-tab-admin');
         h = e.html();
         t = e.attr('title');
@@ -69,7 +71,7 @@ function GSGroupEncouragement () {
         // If this encouragement annoys too many people it can be changed to
         // an icon next to #gs-group-privacy-admin-link, which will create
         // the popover when clicked.
-        var e=null, h=null, t=null, b=null;
+        var e = null, h = null, t = null, b = null;
         e = jQuery('#gs-group-encouragement-private');
         h = e.html();
         t = e.attr('title');
@@ -78,7 +80,7 @@ function GSGroupEncouragement () {
     }
 
     function exists(element) {
-        var retval=null;
+        var retval = null;
         retval = jQuery(element).length > 0;
         return retval;
     }
@@ -101,7 +103,7 @@ function GSGroupEncouragement () {
 
 
 jQuery(window).load(function() {
-    var e=null;
+    var e = null;
     e = GSGroupEncouragement();
     e.init();
 });
