@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2012, 2013, 2014, 2015, 2016 OnlineGroups.net and Contributors.
+# Copyright © 2012, 2013, 2014, 2015, 2016 OnlineGroups.net and
+# Contributors.
 #
 # All Rights Reserved.
 #
@@ -40,6 +41,7 @@ setup(
         'License :: OSI Approved :: Zope Public License',
         "Natural Language :: English",
         "Natural Language :: French",
+        "Natural Language :: German",
         "Operating System :: POSIX :: Linux",
         "Programming Language :: Python",
         "Topic :: Software Development :: Libraries :: Python Modules",
@@ -63,7 +65,7 @@ setup(
         'zope.tal',
         'zope.tales',
         'zope.viewlet',
-        'gs.content.js.bootstrap',
+        'gs.content.js.bootstrap[zope]',
         'gs.group.base',
         'gs.group.home',
         'gs.group.member.base',
@@ -72,6 +74,8 @@ setup(
         'gs.group.privacy',
         'gs.group.stats',
     ],
+    test_suite="{0}.tests.test_all".format(name),
+    tests_require=['mock', ],
     entry_points="""
     # -*- Entry points: -*-
     """,)
