@@ -8,10 +8,13 @@ Changelog
 * Adding the titles of the pop-ups to the internationalisation
 * Following the changes to the membership-information class in
   `gs.group.member.base`_
+* Ensuring the JavaScript passes the `Google Closure Linter`_
 * Adding unit tests
 
 .. _gs.group.member.base:
    https://github.com/groupserver/gs.group.member.base
+.. _Google Closure Linter:
+   https://developers.google.com/closure/utilities/
 
 2.4.2 (2015-03-30)
 ------------------
