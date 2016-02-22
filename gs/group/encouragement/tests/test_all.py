@@ -17,9 +17,10 @@ from unittest import TestSuite, main as unittest_main
 from gs.group.encouragement.tests.about import (TestAbout, )
 from gs.group.encouragement.tests.invite import (TestInvite, )
 from gs.group.encouragement.tests.private import (TestPrivate, )
+from gs.group.encouragement.tests.starttopic import (TestStartTopic, )
 
 
-testCases = (TestAbout, TestInvite, TestPrivate, )
+testCases = (TestAbout, TestInvite, TestPrivate, TestStartTopic, )
 
 
 def load_tests(loader, tests, pattern):
