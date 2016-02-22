@@ -15,8 +15,11 @@
 from __future__ import absolute_import, unicode_literals
 from unittest import TestSuite, main as unittest_main
 from gs.group.encouragement.tests.about import (TestAbout, )
+from gs.group.encouragement.tests.invite import (TestInvite, )
+from gs.group.encouragement.tests.private import (TestPrivate, )
 
-testCases = (TestAbout, )
+
+testCases = (TestAbout, TestInvite, TestPrivate, )
 
 
 def load_tests(loader, tests, pattern):

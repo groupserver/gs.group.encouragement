@@ -110,4 +110,3 @@ class TestAbout(TestCase):
         a = About(group, request, view, manager)
 
         self.assertFalse(a.show)
-

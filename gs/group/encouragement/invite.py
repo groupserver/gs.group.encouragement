@@ -37,7 +37,7 @@ class Invite(StartTopic):
         # Only show the Invite encouragement when the Topic
         #   encouragement is not shown.
         retval = (
-            (len(self.members) < 2)
+            (self.memberCount < 2)
             and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
         assert type(retval) == bool
         return retval
