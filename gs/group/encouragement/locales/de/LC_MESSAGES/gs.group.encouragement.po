@@ -4,9 +4,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: gs.group.encouragement\n"
-"POT-Creation-Date: 2015-03-30 22:15+0000\n"
-"PO-Revision-Date: 2015-07-28 01:37+0000\n"
-"Last-Translator: Clara Adele von Randow <cvrandow@freenet.de>\n"
+"POT-Creation-Date: 2016-02-22 18:57+0000\n"
+"PO-Revision-Date: 2016-02-22 19:18+0000\n"
+"Last-Translator: Michael JasonSmith <mpj17@ldots.org>\n"
 "Language-Team: German (http://www.transifex.com/groupserver/gs-group-encouragement/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,34 +18,53 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Preferred-Encodings: utf-8 latin1\n"
 
+#. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal-->
+#. you should write a description of this group. <!--Method --> <b>Change</b>
+#. the <i>About,</i> to describe the purpose, rules, and anything else that
+#. may be useful. After that you will have a completely functioning group."
+#: ./browser/templates/about.pt:10
+msgid "about-desc"
+msgstr "Da nun auch andere ${groupName} nutzen, sollten Sie eine Beschreibung dieser Gruppe schreiben. <b>Ändern</b> Sie den Inhalt unter <i>Über,</i> um die Absicht, die Regeln und weitere nützliche Aspekte darzustellen. Danach werden Sie eine vollständig funktionierende Gruppe haben."
+
+#. Default: "Write a Description"
+#: ./browser/templates/about.pt:1
+msgid "about-h"
+msgstr ""
+
 #. Default: "<!--Prior step--> Now you have tested posting, <!--Goal and
-#. method--> you should <strong>invite</strong> someone to join this group.
-#. Once the person accepts you can start to collaborate."
-#: ./browser/templates/invite.pt:5
-msgid "invite"
-msgstr "Da Sie nun selbst ausprobiert haben etwas beizutragen, sollten Sie jetzt jemanden <strong>einladen</strong> dieser Gruppe beizutreten. Sobald diese Person die Einladung annimmt, können Sie kollaborieren."
+#. method--> you should <b>invite</b> someone to join this group. Once the
+#. person accepts you can start to collaborate."
+#: ./browser/templates/invite.pt:7
+msgid "invite-desc"
+msgstr "Da Sie nun selbst ausprobiert haben etwas beizutragen, sollten Sie jetzt jemanden <b>einladen</b> dieser Gruppe beizutreten. Sobald diese Person die Einladung annimmt, können Sie kollaborieren."
+
+#. Default: "Invite Someone"
+#: ./browser/templates/invite.pt:1
+msgid "invite-h"
+msgstr ""
 
 #. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method-->
-#. <strong>change</strong> the group privacy to <em>private.</em> With a
-#. private group only group members can see the posts, but others will be able
-#. to <em>request membership.</em>"
-#: ./browser/templates/private.pt:8
-msgid "privacy"
-msgstr "Machen Sie die Anwendung von ${groupName} noch einfacher: <strong>Ändern</strong> Sie die Privatsphäre der Gruppe zu <em>privat.</em> In einer privaten Gruppe können nur die Gruppenmitglieder die Beiträge sehen, jedoch können andere Personen die <em>Mitgliedschaft anfragen.</em>"
+#. <b>change</b> the group privacy to <i>private.</i> With a private group
+#. only group members can see the posts, but others will be able to <i>request
+#. membership.</i>"
+#: ./browser/templates/private.pt:10
+msgid "privacy-desc"
+msgstr "Machen Sie die Anwendung von ${groupName} noch einfacher: <b>Ändern</b> Sie die Privatsphäre der Gruppe zu <i>privat.</i> In einer privaten Gruppe können nur die Gruppenmitglieder die Beiträge sehen, jedoch können andere Personen die <i>Mitgliedschaft anfragen.</i>"
+
+#. Default: "Change the Privacy"
+#: ./browser/templates/private.pt:1
+msgid "privacy-h"
+msgstr ""
 
 #. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To
 #. try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to
-#. ${groupEmail} (You can hide the post afterwards, so no one will be able to
-#. see your test.)"
-#: ./browser/templates/starttopic.pt:13
-msgid "start-topic"
-msgstr "<!--Prior step--> Sie haben eine neue Gruppe gegründet. <!--Goal--> Um diese auszuprobieren, <!--Method--> <b>beginnen</b> Sie mit einem Thema, oder <b>senden</b> Sie eine E-Mail an die Gruppe bei ${groupEmail} (Sie können den Beitrag hinterher ausblenden, sodass niemand Ihren Test sehen kann.)"
+#. the group at ${groupEmail} (You can hide the post afterwards, so no one
+#. will be able to see your test.)"
+#: ./browser/templates/starttopic.pt:14
+msgid "start-topic-desc"
+msgstr "Sie haben eine neue Gruppe gegründet. Um diese auszuprobieren, <b>beginnen</b> Sie mit einem Thema, oder <b>senden</b> Sie eine E-Mail an die Gruppe bei ${groupEmail} (Sie können den Beitrag hinterher ausblenden, sodass niemand Ihren Test sehen kann.)"
 
-#. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal-->
-#. you should write a description of this group. <!--Method -->
-#. <strong>Change</strong> the <em>About,</em> to describe the purpose, rules,
-#. and anything else that may be useful. After that you will have a completely
-#. functioning group."
-#: ./browser/templates/about.pt:8
-msgid "write-description"
-msgstr "Da nun auch andere ${groupName} nutzen, sollten Sie eine Beschreibung dieser Gruppe schreiben. <strong>Ändern</strong> Sie den Inhalt unter <em>Über,</em> um die Absicht, die Regeln und weitere nützliche Aspekte darzustellen. Danach werden Sie eine vollständig funktionierende Gruppe haben. "
+#. Default: "Start a Topic"
+#: ./browser/templates/starttopic.pt:1
+msgid "start-topic-h"
+msgstr ""

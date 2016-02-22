@@ -1,8 +1,9 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="gs.group.encouragement"
-     id="gs-group-encouragement-topics" title="Start a Topic">
-  <p i18n:translate="start-topic">
+     id="gs-group-encouragement-topics" title="Start a Topic"
+     i18n:attributes="title start-topic-h">
+  <p i18n:translate="start-topic-desc">
     <!--Prior step-->
     You have started a new group.
     <!--Goal-->

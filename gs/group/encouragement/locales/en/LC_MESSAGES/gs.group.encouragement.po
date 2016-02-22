@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2015-03-30 22:15+0000\n"
-"PO-Revision-Date: 2015-03-30 15:15-0700\n"
+"POT-Creation-Date: 2016-02-22 18:57+0000\n"
+"PO-Revision-Date: 2016-02-22 10:59-0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -14,23 +14,43 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#. Default: "<!--Prior step--> Now you have tested posting, <!--Goal and method--> you should <strong>invite</strong> someone to join this group. Once the person accepts you can start to collaborate."
-#: ./browser/templates/invite.pt:5
-msgid "invite"
-msgstr "Now you have tested posting, you should <strong>invite</strong> someone to join this group. Once the person accepts you can start to collaborate."
+#. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal--> you should write a description of this group. <!--Method --> <b>Change</b> the <i>About,</i> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
+#: ./browser/templates/about.pt:10
+msgid "about-desc"
+msgstr "Now others are using ${groupName} you should write a description of this group.<b>Change</b> the <i>About,</i> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
 
-#. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method--> <strong>change</strong> the group privacy to <em>private.</em> With a private group only group members can see the posts, but others will be able to <em>request membership.</em>"
-#: ./browser/templates/private.pt:8
-msgid "privacy"
-msgstr "Make ${groupName} easier to use: <strong>change</strong> the group privacy to <em>private.</em> With a private group only group members can see the posts, but others will be able to <em>request membership.</em>"
+#. Default: "Write a Description"
+#: ./browser/templates/about.pt:1
+msgid "about-h"
+msgstr "Write a description"
 
-#. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to ${groupEmail} (You can hide the post afterwards, so no one will be able to see your test.)"
-#: ./browser/templates/starttopic.pt:13
-msgid "start-topic"
-msgstr "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to the group at ${groupEmail} (You can hide the post afterwards, so no one will be able to see your test.)"
+#. Default: "<!--Prior step--> Now you have tested posting, <!--Goal and method--> you should <b>invite</b> someone to join this group. Once the person accepts you can start to collaborate."
+#: ./browser/templates/invite.pt:7
+msgid "invite-desc"
+msgstr "Now you have tested posting, you should <b>invite</b> someone to join this group. Once the person accepts you can start to collaborate."
 
-#. Default: "<!--Prior step--> Now others are using ${groupName} <!--Goal--> you should write a description of this group. <!--Method --> <strong>Change</strong> the <em>About,</em> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
-#: ./browser/templates/about.pt:8
-msgid "write-description"
-msgstr "Now others are using ${groupName} you should write a description of this group. <strong>Change</strong> the <em>About,</em> to describe the purpose, rules, and anything else that may be useful. After that you will have a completely functioning group."
+#. Default: "Invite Someone"
+#: ./browser/templates/invite.pt:1
+msgid "invite-h"
+msgstr "Invite someone"
+
+#. Default: "<!--Goal--> Make ${groupName} easier to use: <!--Method--> <b>change</b> the group privacy to <i>private.</i> With a private group only group members can see the posts, but others will be able to <i>request membership.</i>"
+#: ./browser/templates/private.pt:10
+msgid "privacy-desc"
+msgstr "Make ${groupName} easier to use: <b>change</b> the group privacy to <i>private.</i> With a private group only group members can see the posts, but others will be able to <i>request membership.</i>"
+
+#. Default: "Change the Privacy"
+#: ./browser/templates/private.pt:1
+msgid "privacy-h"
+msgstr "Change the privacy"
+
+#. Default: "<!--Prior step--> You have started a new group. <!--Goal--> To try it out, <!--Method--> <b>start</b> a topic, or <b>send</b> an email to the group at ${groupEmail} (You can hide the post afterwards, so no one will be able to see your test.)"
+#: ./browser/templates/starttopic.pt:14
+msgid "start-topic-desc"
+msgstr "You have started a new group. To try it out <b>start</b> a topic, or <b>send</b> an email to the group at ${groupEmail}. (You can hide the post afterwards, so no one will be able to see your test.)"
+
+#. Default: "Start a Topic"
+#: ./browser/templates/starttopic.pt:1
+msgid "start-topic-h"
+msgstr "Start a topic"
 

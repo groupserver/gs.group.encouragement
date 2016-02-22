@@ -1,16 +1,18 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="gs.group.encouragement"
-     id="gs-group-encouragement-private" title="Change the Privacy">
-  <p i18n:translate="privacy">
+     id="gs-group-encouragement-private"
+     title="Change the Privacy"
+     i18n:attributes="title privacy-h;">
+  <p i18n:translate="privacy-desc">
     <!--Goal-->
     Make
     <span class="group" i18n:name="groupName"
       tal:content="view/groupInfo/name">this group</span>
     easier to use:
     <!--Method-->
-    <strong>change</strong> the group privacy to <em>private.</em>
+    <b>change</b> the group privacy to <i>private.</i>
     With a private group only group members can see the posts, but others
-    will be able to <em>request membership.</em>
+    will be able to <i>request membership.</i>
   </p>
 </div><!--gs-group-encouragement-private-->

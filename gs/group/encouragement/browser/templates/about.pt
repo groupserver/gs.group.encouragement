@@ -1,8 +1,10 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="gs.group.encouragement"
-     id="gs-group-about-tab-admin" title="Write a Description">
-  <p i18n:translate="write-description">
+     id="gs-group-about-tab-admin"
+     title="Write a Description"
+     i18n:attributes="title about-h">
+  <p i18n:translate="about-desc">
     <!--Prior step-->
     Now others are using
     <span class="group" i18n:name="groupName"
@@ -10,7 +12,7 @@
     <!--Goal-->
     you should write a description of this group.
     <!--Method -->
-    <strong>Change</strong> the <em>About,</em> to describe the purpose,
+    <b>Change</b> the <i>About,</i> to describe the purpose,
     rules, and anything else that may be useful.
     After that you will have a completely functioning group.
   </p>

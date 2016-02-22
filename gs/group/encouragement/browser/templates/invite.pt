@@ -1,12 +1,14 @@
 <div xmlns:tal="http://xml.zope.org/namespaces/tal"
      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
      i18n:domain="gs.group.encouragement"
-     id="gs-group-encouragement-invite" title="Invite Someone">
-  <p i18n:translate="invite">
+     id="gs-group-encouragement-invite"
+     title="Invite Someone"
+     i18n:attributes="title invite-h">
+  <p i18n:translate="invite-desc">
     <!--Prior step-->
     Now you have tested posting,
     <!--Goal and method-->
-    you should <strong>invite</strong> someone to join this group.
+    you should <b>invite</b> someone to join this group.
     Once the person accepts you can start to collaborate.
   </p>
 </div><!--gs-group-encouragement-invite-->
