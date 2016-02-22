@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2012, 2013, 2014, 2015 OnlineGroups.net and Contributors.
+# Copyright © 2012, 2013, 2014, 2015, 2016 OnlineGroups.net and
+# Contributors.
 #
 # All Rights Reserved.
 #
@@ -13,12 +14,13 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ############################################################################
-from __future__ import absolute_import, unicode_literals
+from __future__ import absolute_import, unicode_literals, print_function
 from zope.cachedescriptors.property import Lazy
 from .invite import Invite
 
 
 class About(Invite):
+    '''The *Change about* encouragement'''
     @Lazy
     def hasAboutText(self):
         t = getattr(self.context, b'aboutText', '').strip()
@@ -27,6 +29,8 @@ class About(Invite):
 
     @property
     def show(self):
+        '''Show the *Change about* encouragement box if we lack about text, have posts, and some
+members'''
         retval = (
             (not self.hasAboutText)
             and (self.statsQuery.posts_per_day(self.groupInfo.id) != [])
