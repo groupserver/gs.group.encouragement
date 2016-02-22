@@ -1,16 +1,4 @@
-"use strict";jQuery.noConflict();function GSGroupEncouragement(){var g=3000;function e(l,o,k,p){var n=null,m=null,j=null,i=null;
-m="jQuery(&quot;"+l+"&quot;).popover(&quot;hide&quot;);";i='<button type="button" class="close" onclick="'+m+'">&times;</button>';
-n={animation:true,title:o+i,html:true,placement:p,trigger:"manual",content:k};j=jQuery(l);
-j.popover(n);j.popover("show");j.next(".popover").find(".popover-title").html(o+i)
-}function h(){var m=null,l=null,j=null,i=null,k=null;m=jQuery("#gs-group-encouragement-topics");
-l=m.html();j=m.attr("title");i="#gs-group-messages-topics-search-form-new-topic";
-k=jQuery(i).parents(".tab-content");k.css("overflow","visible");e(i,j,l,"bottom")
-}function c(){var l=null,k=null,j=null,i=null;l=jQuery("#gs-group-encouragement-invite");
-k=l.html();j=l.attr("title");i="#gs-group-member-invite-base-admin-single";e(i,j,k,"left")
-}function d(){var l=null,k=null,j=null,i=null;l=jQuery("#gs-group-about-tab-admin");
-k=l.html();j=l.attr("title");i="#gs-group-about-change-link";e(i,j,k,"bottom")}function b(){var l=null,k=null,j=null,i=null;
-l=jQuery("#gs-group-encouragement-private");k=l.html();j=l.attr("title");i="#gs-group-privacy-admin-link";
-e(i,j,k,"left")}function f(j){var i=null;i=jQuery(j).length>0;return i}function a(){if(f("#gs-group-encouragement-topics")){window.setTimeout(h,g)
-}else{if(f("#gs-group-encouragement-invite")){window.setTimeout(c,g)}else{if(f("#gs-group-about-tab-admin")){window.setTimeout(d,g)
-}else{if(f("#gs-group-encouragement-private")){window.setTimeout(b,g)}}}}}return{init:a}
-}jQuery(window).load(function(){var a=null;a=GSGroupEncouragement();a.init()});
+'use strict';jQuery.noConflict();
+function GSGroupEncouragement(){function d(a,b,d,c){var h=null,e=null,f=null,f='<button type="button" class="close" onclick="'+("jQuery(&quot;"+a+"&quot;).popover(&quot;hide&quot;);")+'">&times;</button>',h={animation:!0,title:b+f,html:!0,placement:c,trigger:"manual",content:d},e=jQuery(a);e.popover(h);e.popover("show");e.next(".popover").find(".popover-title").html(b+f)}function k(){var a=null,b=null,c=a=null,g=null,a=jQuery("#gs-group-encouragement-topics"),b=a.html(),a=a.attr("title"),c="#gs-group-messages-topics-search-form-new-topic",
+g=jQuery(c).parents(".tab-content");g.css("overflow","visible");d(c,a,b,"bottom")}function l(){var a=null,b=null,a=null,a=jQuery("#gs-group-encouragement-invite"),b=a.html(),a=a.attr("title");d("#gs-group-member-invite-base-admin-single",a,b,"left")}function m(){var a=null,b=null,a=null,a=jQuery("#gs-group-about-tab-admin"),b=a.html(),a=a.attr("title");d("#gs-group-about-change-link",a,b,"bottom")}function n(){var a=null,b=null,a=null,a=jQuery("#gs-group-encouragement-private"),b=a.html(),a=a.attr("title");
+d("#gs-group-privacy-admin-link",a,b,"left")}function c(a){var b=null;return b=0<jQuery(a).length}return{init:function(){c("#gs-group-encouragement-topics")?window.setTimeout(k,3E3):c("#gs-group-encouragement-invite")?window.setTimeout(l,3E3):c("#gs-group-about-tab-admin")?window.setTimeout(m,3E3):c("#gs-group-encouragement-private")&&window.setTimeout(n,3E3)}}}jQuery(window).load(function(){var d=null,d=GSGroupEncouragement();d.init()});

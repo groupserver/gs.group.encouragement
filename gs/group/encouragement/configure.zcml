@@ -19,10 +19,10 @@
   <i18n:registerTranslations directory="locales" />
 
   <browser:resource
-    name="gs-group-encouragement-20140325.js"
+    name="gs-group-encouragement-20160222.js"
     file="browser/javascript/encouragement.js" />
   <browser:resource
-    name="gs-group-encouragement-20140325-min.js"
+    name="gs-group-encouragement-20160222-min.js"
     file="browser/javascript/encouragement-min.js" />
 
   <!--The viewlet -->
