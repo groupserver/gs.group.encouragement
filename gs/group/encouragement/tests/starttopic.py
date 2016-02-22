@@ -40,3 +40,40 @@ class TestStartTopic(TestCase):
 
         self.assertTrue(s.show)
 
+    @patch.object(StartTopic, 'statsQuery', new_callable=PropertyMock)
+    @patch.object(StartTopic, 'groupInfo', new_callable=PropertyMock)
+    @patch.object(StartTopic, 'canPost', new_callable=PropertyMock)
+    @patch('gs.group.encouragement.starttopic.SiteAdminViewlet.show', new_callable=PropertyMock)
+    def test_show_cannot_post(self, m_SAVs, m_cP, m_gI, m_sQ):
+        '''Ensure show is False if the member is prevented from posting'''
+        m_SAVs.return_value = True
+        m_cP().canPost = False
+        m_gI.id = 'example_group'
+        m_sQ().posts_per_day.return_value = []
+
+        group = MagicMock()
+        request = MagicMock()
+        view = MagicMock()
+        manager = MagicMock()
+        s = StartTopic(group, request, view, manager)
+
+        self.assertFalse(s.show)
+
+    @patch.object(StartTopic, 'statsQuery', new_callable=PropertyMock)
+    @patch.object(StartTopic, 'groupInfo', new_callable=PropertyMock)
+    @patch.object(StartTopic, 'canPost', new_callable=PropertyMock)
+    @patch('gs.group.encouragement.starttopic.SiteAdminViewlet.show', new_callable=PropertyMock)
+    def test_show_posts(self, m_SAVs, m_cP, m_gI, m_sQ):
+        '''Ensure show is False if there are posts'''
+        m_SAVs.return_value = True
+        m_cP().canPost = True
+        m_gI.id = 'example_group'
+        m_sQ().posts_per_day.return_value = ['A post']
+
+        group = MagicMock()
+        request = MagicMock()
+        view = MagicMock()
+        manager = MagicMock()
+        s = StartTopic(group, request, view, manager)
+
+        self.assertFalse(s.show)
