@@ -1,6 +1,18 @@
 Changelog
 =========
 
+2.4.3 (2016-02-22)
+------------------
+
+* [DE] Adding the German localisation
+* Adding the titles of the pop-ups to the internationalisation
+* Following the changes to the membership-information class in
+  `gs.group.member.base`_
+* Adding unit tests
+
+.. _gs.group.member.base:
+   https://github.com/groupserver/gs.group.member.base
+
 2.4.2 (2015-03-30)
 ------------------
 
