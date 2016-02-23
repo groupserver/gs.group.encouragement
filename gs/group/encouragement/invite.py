@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 ############################################################################
 #
-# Copyright © 2012, 2013, 2014, 2015 OnlineGroups.net and Contributors.
+# Copyright © 2012, 2013, 2014, 2015, 2016 OnlineGroups.net and
+# Contributors.
 #
 # All Rights Reserved.
 #
@@ -29,15 +30,14 @@ class Invite(StartTopic):
 
     @Lazy
     def memberCount(self):
-        retval = self.membersInfo.fullMemberCount
+        retval = len(self.members)
         return retval
 
     @property
     def show(self):
         # Only show the Invite encouragement when the Topic
         #   encouragement is not shown.
-        retval = (
-            (self.memberCount < 2)
-            and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
+        retval = ((self.memberCount < 2)
+                  and (self.statsQuery.posts_per_day(self.groupInfo.id) != []))
         assert type(retval) == bool
         return retval
